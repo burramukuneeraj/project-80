@@ -1,0 +1,30 @@
+<html><center><head>guest list</head></center>
+<body> <center>
+<div><input type="text" id="1234"><div><button id="submit" onclick="subbmit()" >submit</button></div></div>
+<div id="normal"></div>
+<div ><div><input type="text"></div><button id="sort" onclick="searching()">find</button>
+<div id="sorted"></div></div>
+</center><script>var myarray =[];
+    var aray_length=[];
+    function subbmit(){
+    var arrayname=document.getElementById("1234").value;
+    myarray.push(arrayname);
+    document.getElementById("normal").innerHTML=myarray;
+
+    }
+    function searching(){
+        
+        var  s=document.getElementById("s1".value )
+        var found=0;
+        var j;
+        for(j=0; j<myarray.length;j++)
+        if(s==myarray[j]){
+            found=found+1;
+        }
+            
+        document.getElementById("p2").innerHTML="name found"+found+"time/s";
+        console.log("name found"+found+"time/s")
+        
+        
+                 }</script>
+</body></html>
